@@ -1,0 +1,413 @@
+/* ===== Reset e Estilos Globais ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    background-color: #59515E; /* Cor de fundo */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    background-color: #6D616F; /* Cor do cabeçalho */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Cor dourada ao passar o mouse */
+}
+
+/* ===== Botões ===== */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dois botões por linha */
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.button {
+    background-color: #696880; /* Cor dos botões */
+    color: #fff;
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background-color: #5A5A70; /* Cor dos botões ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de levantar */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-color: #FFD700; /* Borda dourada ao passar o mouse */
+}
+
+/* ===== Rodapé ===== */
+footer {
+    background-color: #6D616F; /* Cor do rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* ===== Estilos Específicos para a Aba Estudo ===== */
+.estudo-main {
+    background-color: #6D616F; /* Cor de fundo do conteúdo */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.estudo-main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFD700; /* Cor dourada para títulos */
+    text-align: center;
+}
+
+/* Cards para cada seção */
+section {
+    background-color: #7A6F7B; /* Cor de fundo dos cards */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #FFD700; /* Cor dourada para títulos */
+    display: flex;
+    align-items: center;
+}
+
+section h3::before {
+    content: "•"; /* Ícone simples */
+    color: #FFD700;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+section h4 {
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FFD700; /* Cor dourada para subtítulos */
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* Estilos para as equações */
+.equation {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #FFD700; /* Cor dourada para destacar */
+    background-color: rgba(255, 215, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .estudo-main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h3 {
+        font-size: 1.6em;
+    }
+
+    section h4 {
+        font-size: 1.2em;
+    }
+
+    section p, section ul li {
+        font-size: 1em;
+    }
+}
+
+/* ===== Estilos para a Seção de Imagens ===== */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-card {
+    background-color: #7A6F7B; /* Cor de fundo dos cards */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+}
+
+.image-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image-caption {
+    font-size: 1em;
+    color: #FFD700; /* Cor dourada para a legenda */
+    margin: 0;
+}
+
+/* ===== Estilos para as Questões ===== */
+.question {
+    background: linear-gradient(145deg, #7A6F7B, #6D616F); /* Gradiente moderno */
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.question h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #FFD700; /* Cor dourada para títulos */
+}
+
+.question label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.question .option {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.question .option:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.question .correct {
+    background-color: rgba(0, 255, 0, 0.1); /* Verde para respostas corretas */
+    border: 2px solid green;
+}
+
+.question .incorrect {
+    background-color: rgba(255, 0, 0, 0.1); /* Vermelho para respostas incorretas */
+    border: 2px solid red;
+}
+
+.question button {
+    background-color: #696880; /* Cor dos botões */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.question button:hover {
+    background-color: #5A5A70; /* Cor dos botões ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.result i {
+    margin-right: 10px;
+}
+
+/* Botão de Reiniciar */
+.reset-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.reset-container button {
+    background-color: #FFD700; /* Cor dourada */
+    color: #59515E;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reset-container button:hover {
+    background-color: #e6c200; /* Cor dourada mais escura ao passar o mouse */
+    transform: scale(1.05);
+}
+
+/* ===== Estilos para a Aba de Vídeos ===== */
+.video-card {
+    background: linear-gradient(145deg, #7A6F7B, #6D616F); /* Gradiente moderno */
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.video-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #FFD700; /* Cor dourada para títulos */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 para vídeos */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-summary {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.video-summary p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+}
+
+.video-summary strong {
+    color: #FFD700; /* Cor dourada para o título do resumo */
+}
+
