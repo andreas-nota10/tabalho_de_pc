@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo - Eletroquímica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Eletroquímica</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container estudo-main">
+        <h2>Estudo: Teoria da Eletroquímica</h2>
+        <p>
+            A eletroquímica é o ramo da química que estuda as reações químicas que envolvem transferência de elétrons, conhecidas como reações de oxirredução (redox). Essas reações são a base para o funcionamento de baterias, pilhas, células eletrolíticas e muitos processos industriais.
+        </p>
+
+        <!-- Seção 1: Conceitos Básicos -->
+        <section>
+            <h3>1. Conceitos Básicos</h3>
+            <p>
+                Para entender a eletroquímica, é essencial dominar alguns conceitos fundamentais:
+            </p>
+            <ul>
+                <li>
+                    <strong>Oxidação:</strong> Processo em que uma espécie química perde elétrons. Exemplo: 
+                    <span class="equation">Mg → Mg²⁺ + 2e⁻</span>.
+                </li>
+                <li>
+                    <strong>Redução:</strong> Processo em que uma espécie química ganha elétrons. Exemplo: 
+                    <span class="equation">Cl₂ + 2e⁻ → 2Cl⁻</span>.
+                </li>
+                <li>
+                    <strong>Agente Oxidante:</strong> Substância que causa a oxidação de outra, sendo ela mesma reduzida.
+                </li>
+                <li>
+                    <strong>Agente Redutor:</strong> Substância que causa a redução de outra, sendo ela mesma oxidada.
+                </li>
+                <li>
+                    <strong>Reação Redox:</strong> Combinação de uma oxidação e uma redução. Exemplo: 
+                    <span class="equation">Zn + Cu²⁺ → Zn²⁺ + Cu</span>.
+                </li>
+            </ul>
+            <p>
+                <strong>Exemplo Prático:</strong> Na reação entre zinco e cobre, o zinco (Zn) é oxidado, perdendo elétrons, enquanto o íon cobre (Cu²⁺) é reduzido, ganhando elétrons. Essa transferência de elétrons gera uma corrente elétrica, que é a base do funcionamento de pilhas e baterias.
+            </p>
+        </section>
+
+        <!-- Seção 2: Células Galvânicas -->
+        <section>
+            <h3>2. Células Galvânicas (Pilhas)</h3>
+            <p>
+                As células galvânicas são dispositivos que convertem energia química em energia elétrica por meio de reações redox espontâneas. Um exemplo clássico é a pilha de Daniell.
+            </p>
+            <h4>Pilha de Daniell:</h4>
+            <ul>
+                <li>
+                    <strong>Ânodo (Oxidação):</strong> 
+                    <span class="equation">Zn(s) → Zn²⁺(aq) + 2e⁻</span>.
+                </li>
+                <li>
+                    <strong>Cátodo (Redução):</strong> 
+                    <span class="equation">Cu²⁺(aq) + 2e⁻ → Cu(s)</span>.
+                </li>
+                <li>
+                    <strong>Reação Global:</strong> 
+                    <span class="equation">Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)</span>.
+                </li>
+            </ul>
+            <p>
+                A diferença de potencial (ddp) gerada pela pilha de Daniell é de aproximadamente 1,10 V. Essa ddp é calculada pela equação de Nernst:
+                <span class="equation">E = E° - (RT/nF) * ln(Q)</span>, onde:
+            </p>
+            <ul>
+                <li><strong>E°:</strong> Potencial padrão da célula.</li>
+                <li><strong>R:</strong> Constante dos gases (8,314 J/mol·K).</li>
+                <li><strong>T:</strong> Temperatura em Kelvin.</li>
+                <li><strong>n:</strong> Número de elétrons transferidos.</li>
+                <li><strong>F:</strong> Constante de Faraday (96485 C/mol).</li>
+                <li><strong>Q:</strong> Quociente da reação.</li>
+            </ul>
+        </section>
+
+        <!-- Seção 3: Eletrólise -->
+        <section>
+            <h3>3. Eletrólise</h3>
+            <p>
+                A eletrólise é o processo inverso ao das células galvânicas. Nela, a energia elétrica é usada para provocar reações químicas não espontâneas. É amplamente utilizada na indústria para a produção de metais e gases.
+            </p>
+            <h4>Exemplo: Eletrólise da Água</h4>
+            <ul>
+                <li>
+                    <strong>Ânodo (Oxidação):</strong> 
+                    <span class="equation">2H₂O(l) → O₂(g) + 4H⁺(aq) + 4e⁻</span>.
+                </li>
+                <li>
+                    <strong>Cátodo (Redução):</strong> 
+                    <span class="equation">2H₂O(l) + 2e⁻ → H₂(g) + 2OH⁻(aq)</span>.
+                </li>
+                <li>
+                    <strong>Reação Global:</strong> 
+                    <span class="equation">2H₂O(l) → 2H₂(g) + O₂(g)</span>.
+                </li>
+            </ul>
+            <p>
+                Esse processo é utilizado para a produção de hidrogênio e oxigênio em laboratório e na indústria. O hidrogênio produzido pode ser usado como combustível, enquanto o oxigênio tem aplicações médicas e industriais.
+            </p>
+        </section>
+
+        <!-- Seção 4: Potencial Padrão de Eletrodo -->
+        <section>
+            <h3>4. Potencial Padrão de Eletrodo</h3>
+            <p>
+                O potencial padrão de eletrodo (E°) é uma medida da tendência de uma espécie química em ganhar ou perder elétrons. Ele é medido em volts (V) e comparado em relação ao eletrodo padrão de hidrogênio (EPH), que tem E° = 0 V.
+            </p>
+            <h4>Exemplos de Potenciais Padrão:</h4>
+            <ul>
+                <li>
+                    <strong>Li⁺ + e⁻ → Li(s):</strong> 
+                    <span class="equation">E° = -3,04 V</span>.
+                </li>
+                <li>
+                    <strong>Zn²⁺ + 2e⁻ → Zn(s):</strong> 
+                    <span class="equation">E° = -0,76 V</span>.
+                </li>
+                <li>
+                    <strong>Cu²⁺ + 2e⁻ → Cu(s):</strong> 
+                    <span class="equation">E° = +0,34 V</span>.
+                </li>
+            </ul>
+            <p>
+                Quanto maior o potencial padrão, maior a tendência da espécie em ser reduzida. Esses valores são essenciais para calcular a ddp de uma célula galvânica.
+            </p>
+        </section>
+
+        <!-- Seção 5: Aplicações da Eletroquímica -->
+        <section>
+            <h3>5. Aplicações da Eletroquímica</h3>
+            <p>
+                A eletroquímica tem diversas aplicações práticas no dia a dia e na indústria:
+            </p>
+            <ul>
+                <li>
+                    <strong>Baterias e Pilhas:</strong> Convertem energia química em elétrica. Exemplos: pilhas alcalinas, baterias de lítio.
+                </li>
+                <li>
+                    <strong>Eletrodeposição:</strong> Revestimento de metais para proteção contra corrosão. Exemplo: galvanização.
+                </li>
+                <li>
+                    <strong>Eletrólise:</strong> Produção de metais (alumínio) e gases (hidrogênio e cloro).
+                </li>
+                <li>
+                    <strong>Corrosão:</strong> Estudo e prevenção da degradação de metais.
+                </li>
+            </ul>
+            <p>
+                <strong>Exemplo Prático:</strong> A galvanização é um processo de eletrodeposição que protege o ferro da corrosão ao revesti-lo com uma camada de zinco. O zinco age como um metal de sacrifício, oxidando-se no lugar do ferro.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Eletroquímica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
