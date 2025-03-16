@@ -411,3 +411,21 @@ section ul li {
     color: #FFD700; /* Cor dourada para o título do resumo */
 }
 
+
+
+/* ===== Estilos para a Logo ===== */
+.logo img {
+    max-width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+    margin-right: 20px; /* Espaçamento entre a logo e o título */
+}
+
+header .container {
+    display: flex;
+    align-items: center; /* Alinha a logo e o título verticalmente */
+    justify-content: center; /* Centraliza o conteúdo */
+}
+
+header h1 {
+    margin-bottom: 0; /* Remove a margem inferior para alinhar melhor com a logo */
+}
