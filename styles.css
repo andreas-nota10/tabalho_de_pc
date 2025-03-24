@@ -431,32 +431,41 @@ header h1 {
 }
 
 
-/* ===== Botões em Forma de Y ===== */
+
+
+/* ===== Botões em Forma de Y Modificada ===== */
 .button-container {
     display: grid;
     grid-template-areas: 
-        "top top"
+        "video video"
         "left right"
-        "bottom bottom";
+        "estudo estudo";
     gap: 20px;
     max-width: 800px;
     margin: 40px auto;
 }
 
-.button:nth-child(1) {
-    grid-area: top;
+/* Assumindo que a ordem dos botões no HTML é:
+   1 - Estudo
+   2 - Como Estudar
+   3 - Atividades
+   4 - Vídeo
+*/
+
+.button:nth-child(4) {  /* Vídeo */
+    grid-area: video;
     justify-self: center;
 }
 
-.button:nth-child(2) {
+.button:nth-child(2) {  /* Como Estudar */
     grid-area: left;
 }
 
-.button:nth-child(3) {
+.button:nth-child(3) {  /* Atividades */
     grid-area: right;
 }
 
-.button:nth-child(4) {
-    grid-area: bottom;
+.button:nth-child(1) {  /* Estudo */
+    grid-area: estudo;
     justify-self: center;
 }
