@@ -162,7 +162,49 @@ section h4 {
     font-size: 1.4em;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #FFD700; /* Cor dourada para subtítulos */
+    color: #FFD700; /* Cor do/* ===== Botões em Forma de Y ===== */
+.button-container {
+    display: grid;
+    grid-template-areas: 
+        "video video"
+        "left right"
+        "estudo estudo";
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Ordem dos botões no HTML:
+   1 - Vídeo
+   2 - Como Estudar
+   3 - Atividades
+   4 - Estudo
+*/
+
+.button:nth-child(1) {  /* Vídeo - Topo */
+    grid-area: video;
+    justify-self: center;
+    width: 60%;
+}
+
+.button:nth-child(2) {  /* Como Estudar - Esquerda */
+    grid-area: left;
+    justify-self: end;
+    width: 80%;
+}
+
+.button:nth-child(3) {  /* Atividades - Direita */
+    grid-area: right;
+    justify-self: start;
+    width: 80%;
+}
+
+.button:nth-child(4) {  /* Estudo - Base */
+    grid-area: estudo;
+    justify-self: center;
+    width: 60%;
+    margin-top: -10px; /* Aproxima do centro do Y */
+}urada para subtítulos */
 }
 
 section p {
@@ -433,7 +475,9 @@ header h1 {
 
 
 
-/* ===== Botões em Forma de Y Modificada ===== */
+
+
+/* ===== Botões em Forma de Y ===== */
 .button-container {
     display: grid;
     grid-template-areas: 
@@ -445,27 +489,34 @@ header h1 {
     margin: 40px auto;
 }
 
-/* Assumindo que a ordem dos botões no HTML é:
-   1 - Estudo
+/* Ordem dos botões no HTML:
+   1 - Vídeo
    2 - Como Estudar
    3 - Atividades
-   4 - Vídeo
+   4 - Estudo
 */
 
-.button:nth-child(4) {  /* Vídeo */
+.button:nth-child(1) {  /* Vídeo - Topo */
     grid-area: video;
     justify-self: center;
+    width: 60%;
 }
 
-.button:nth-child(2) {  /* Como Estudar */
+.button:nth-child(2) {  /* Como Estudar - Esquerda */
     grid-area: left;
+    justify-self: end;
+    width: 80%;
 }
 
-.button:nth-child(3) {  /* Atividades */
+.button:nth-child(3) {  /* Atividades - Direita */
     grid-area: right;
+    justify-self: start;
+    width: 80%;
 }
 
-.button:nth-child(1) {  /* Estudo */
+.button:nth-child(4) {  /* Estudo - Base */
     grid-area: estudo;
     justify-self: center;
+    width: 60%;
+    margin-top: -10px; /* Aproxima do centro do Y */
 }
