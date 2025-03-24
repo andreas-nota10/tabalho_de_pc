@@ -478,3 +478,50 @@ header h1 {
 
 
 
+/* ===== Layout Especial para Botões ===== */
+.button-container {
+    display: grid;
+    grid-template-areas: 
+        "left . right"
+        ". center ."
+        ". center .";
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    min-height: 400px;
+}
+
+/* Ordem dos botões no HTML:
+   1 - Vídeo
+   2 - Como Estudar
+   3 - Atividades
+   4 - Estudo
+*/
+
+.button:nth-child(1) {  /* Vídeo - Centro superior */
+    grid-area: center;
+    align-self: end;
+    width: 60%;
+}
+
+.button:nth-child(2) {  /* Como Estudar - Esquerda */
+    grid-area: left;
+    justify-self: end;
+    width: 70%;
+}
+
+.button:nth-child(3) {  /* Atividades - Direita */
+    grid-area: right;
+    justify-self: start;
+    width: 70%;
+}
+
+.button:nth-child(4) {  /* Estudo - Centro inferior */
+    grid-area: center;
+    align-self: start;
+    width: 60%;
+    margin-top: 20px;
+}
