@@ -429,3 +429,34 @@ header .container {
 header h1 {
     margin-bottom: 0; /* Remove a margem inferior para alinhar melhor com a logo */
 }
+
+
+/* ===== Botões em Forma de Y ===== */
+.button-container {
+    display: grid;
+    grid-template-areas: 
+        "top top"
+        "left right"
+        "bottom bottom";
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.button:nth-child(1) {
+    grid-area: top;
+    justify-self: center;
+}
+
+.button:nth-child(2) {
+    grid-area: left;
+}
+
+.button:nth-child(3) {
+    grid-area: right;
+}
+
+.button:nth-child(4) {
+    grid-area: bottom;
+    justify-self: center;
+}
