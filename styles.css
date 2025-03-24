@@ -499,7 +499,7 @@ header h1 {
 .button:nth-child(1) {  /* Vídeo - Topo */
     grid-area: video;
     justify-self: center;
-    width: 60%;
+    width: -60%;
 }
 
 .button:nth-child(2) {  /* Como Estudar - Esquerda */
